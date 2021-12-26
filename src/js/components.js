@@ -50,7 +50,6 @@ divTodoList.addEventListener('click', (event) => {
     const element     = event.target.localName; // Input, label, button...
     const todoElement = event.target.parentElement.parentElement; // todo <li>
     const todoId      = todoElement.getAttribute('data-id');
-    // console.log(todoList);
     
     if ( element.includes('input') ) { // click on check
         todoList.toggleTodo( todoId );
